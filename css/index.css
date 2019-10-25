@@ -144,8 +144,106 @@ body {
   padding: 2% 2% 2% 2%;
   background-color: lightblue;
 }
-.container div {
-  border: 2px dashed green;
+@media (max-width: 500px) {
+  .container header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .container header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .container header a {
+    color: darkgray;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .container header a:hover {
+    color: darkgoldenrod;
+  }
+  .container .Top {
+    display: flex;
+    background-color: white;
+    border: 2px solid;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+  .container .Top .img {
+    width: 49%;
+  }
+  .container .Top .img img {
+    height: 600px;
+    width: 100%;
+  }
+  .container .Top .Intro {
+    width: 49%;
+  }
+  .container .Top .Intro h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .container .Top .Intro h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .container .Top .Intro p {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .container .Top .Intro li {
+    margin-bottom: 15px;
+    text-shadow: cadetblue 1px 3px 6px;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  .container .Top .Intro img {
+    display: inline-block;
+    border-radius: 55%;
+    height: 15%;
+    width: 15%;
+    margin: 19px 8px;
+  }
+  .container .Mid-Sec {
+    background-color: black;
+  }
+  .container .Mid-Sec h1 {
+    font-size: 30px;
+    color: rosybrown;
+  }
+  .container .Mid-Sec table {
+    height: 400px;
+  }
+  .container .Mid-Sec table th,
+  .container .Mid-Sec table td {
+    font-size: 22px;
+    color: silver;
+    border: 2px solid white;
+  }
+  .container article {
+    background-color: palegreen;
+  }
+  .container article h5 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 15px 0px 15px 0px;
+  }
+  .container article h6 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 15px 0px 15px 0px;
+  }
+  .container footer {
+    margin: 15px 0px 3px 0px;
+    background-color: moccasin;
+    text-align: center;
+  }
+  .container footer h4 {
+    color: navy;
+    font-size: 13px;
+  }
 }
 .container header {
   text-align: center;
@@ -173,7 +271,6 @@ body {
   margin-bottom: 35px;
 }
 .container .Top .img {
-  border: 2px dotted red;
   width: 49%;
 }
 .container .Top .img img {
@@ -186,11 +283,6 @@ body {
 .container .Top .Intro h1 {
   font-size: 50px;
   text-align: center;
-}
-@media (max-width: 500px) {
-  .container .Top .Intro h1 {
-    font-size: 25px;
-  }
 }
 .container .Top .Intro h3 {
   font-size: 30px;
@@ -216,7 +308,6 @@ body {
 }
 .container .Mid-Sec {
   background-color: black;
-  border: 2px solid red;
 }
 .container .Mid-Sec h1 {
   font-size: 30px;
@@ -249,7 +340,6 @@ body {
   font-size: large;
 }
 .container footer {
-  border: 2px dashed yellow;
   margin: 15px 770px 3px 770px;
   background-color: moccasin;
   text-align: center;
