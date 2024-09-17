@@ -1,1 +1,350 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+/* Starting Preprocessing*/
+.header-class {
+  display: flex;
+  flex-direction: row;
+}
+.container {
+  width: 100%;
+  padding: 2% 2% 2% 2%;
+  background-color: lightblue;
+}
+@media (max-width: 500px) {
+  .container header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  .container header nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .container header a {
+    color: darkgray;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .container header a:hover {
+    color: darkgoldenrod;
+  }
+  .container .Top {
+    display: flex;
+    background-color: white;
+    border: 2px solid;
+    justify-content: space-between;
+    margin-bottom: 35px;
+  }
+  .container .Top .img {
+    width: 49%;
+  }
+  .container .Top .img img {
+    height: 600px;
+    width: 100%;
+  }
+  .container .Top .Intro {
+    width: 49%;
+  }
+  .container .Top .Intro h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  .container .Top .Intro h3 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .container .Top .Intro p {
+    font-size: 20px;
+    margin-bottom: 25px;
+  }
+  .container .Top .Intro li {
+    margin-bottom: 15px;
+    text-shadow: cadetblue 1px 3px 6px;
+    font-size: 15px;
+    text-decoration: underline;
+  }
+  .container .Top .Intro img {
+    display: inline-block;
+    border-radius: 55%;
+    height: 15%;
+    width: 15%;
+    margin: 19px 8px;
+  }
+  .container .Mid-Sec {
+    background-color: black;
+  }
+  .container .Mid-Sec h1 {
+    font-size: 30px;
+    color: rosybrown;
+  }
+  .container .Mid-Sec table {
+    height: 400px;
+  }
+  .container .Mid-Sec table th,
+  .container .Mid-Sec table td {
+    font-size: 22px;
+    color: silver;
+    border: 2px solid white;
+  }
+  .container article {
+    background-color: palegreen;
+  }
+  .container article h5 {
+    font-size: 30px;
+    font-weight: bolder;
+    margin: 15px 0px 15px 0px;
+  }
+  .container article h6 {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 15px 0px 15px 0px;
+  }
+  .container footer {
+    margin: 15px 0px 3px 0px;
+    background-color: moccasin;
+    text-align: center;
+  }
+  .container footer h4 {
+    color: navy;
+    font-size: 13px;
+  }
+}
+.container header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+.container header nav {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.container header a {
+  color: darkgray;
+  font-weight: bolder;
+  font-size: 20px;
+}
+.container header a:hover {
+  color: darkgoldenrod;
+}
+.container .Top {
+  display: flex;
+  background-color: white;
+  border: 2px solid;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+.container .Top .img {
+  width: 49%;
+}
+.container .Top .img img {
+  height: 600px;
+  width: 100%;
+}
+.container .Top .Intro {
+  width: 49%;
+}
+.container .Top .Intro h1 {
+  font-size: 50px;
+  text-align: center;
+}
+.container .Top .Intro h3 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.container .Top .Intro p {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.container .Top .Intro li {
+  margin-bottom: 15px;
+  text-shadow: cadetblue 1px 3px 6px;
+  font-size: 35px;
+  text-decoration: underline;
+}
+.container .Top .Intro img {
+  display: inline-block;
+  border-radius: 55%;
+  height: 15%;
+  width: 15%;
+  margin: 19px 8px;
+}
+.container .Mid-Sec {
+  background-color: black;
+}
+.container .Mid-Sec h1 {
+  font-size: 30px;
+  color: rosybrown;
+}
+.container .Mid-Sec table {
+  height: 400px;
+}
+.container .Mid-Sec table th,
+.container .Mid-Sec table td {
+  font-size: 22px;
+  color: silver;
+  border: 1px solid white;
+}
+.container article {
+  background-color: palegreen;
+}
+.container article h5 {
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 15px 0px 15px 0px;
+}
+.container article h6 {
+  font-size: 25px;
+  font-weight: bolder;
+  margin: 15px 0px 15px 0px;
+}
+.container article p {
+  font-weight: bold;
+  font-size: large;
+}
+.container footer {
+  margin: 15px 770px 3px 770px;
+  background-color: moccasin;
+  text-align: center;
+}
+.container footer h4 {
+  color: navy;
+  font-size: 13px;
+}
